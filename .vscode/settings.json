@@ -1,0 +1,29 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "javascript.validate.enable": false,
+    // available through eslint plugin in vscode
+    // Set the default
+    "editor.formatOnSave": false,
+    "eslint.validate":  ["javascript", "javascriptreact"],
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.fixAll.eslint": "explicit"
+    },
+    // Enable prettier as formatter per-language
+    "[javascript]": {
+      // formatOnSave already performed by eslint.autoFixOnSave plugin config
+      // "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "javascript.format.semicolons": "remove",
+    "typescript.format.semicolons": "remove",
+    "prettier.prettierPath": "node_modules/prettier"
+  }
+  
