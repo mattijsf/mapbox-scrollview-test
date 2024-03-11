@@ -3,11 +3,6 @@ import MapboxGL from "@rnmapbox/maps"
 import React, { useMemo } from "react"
 import { ScrollView, Text, View, ViewStyle, useWindowDimensions } from "react-native"
 
-import { MAPBOX_ACCESS_TOKEN } from "./.mapbox-access-token"
-
-MapboxGL.setAccessToken(MAPBOX_ACCESS_TOKEN)
-MapboxGL.setTelemetryEnabled(false)
-
 const MapboxScrollViewBug = () => {
   const { width: windowWidth } = useWindowDimensions()
 
